@@ -1,5 +1,14 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\setcounter{secnumdepth}{0}
+\setcounter{MaxMatrixCols}{20}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{hyperref}
+\graphicspath{ {./images/} }  
 
 \title{Formulario, Física}
 \author{Raúl Ultralaser}
@@ -10,5 +19,30 @@
 \maketitle
 
 \section{Vectores}
+\begin{align*}
+\vec{A}&=A_x\hat{i}+A_y\hat{j}+A_z\hat{k}\\
+\vec{B}&=B_x\hat{i}+B_y\hat{j}+B_z\hat{k}\\
+\end{align*}
+Producto escalar (punto)
+\begin{equation*}
+    \Vec{A}\cdot \Vec{B}=ABcos\phi=|A||B|cos\phi
+\end{equation*}
+en terminos de sus componentes
+\begin{equation*}
+    \Vec{A}\cdot \Vec{B}=A_xB_x+A_yB_y+A_zB_z
+\end{equation*}
+Producto cruz
+\begin{equation*}
+    \Vec{C}=\Vec{A}\times\Vec{B}=ABsen\phi
+\end{equation*}
+en terminos de sus componentes
+\begin{align*}
+C_x&=A_yB_z-A_zB_y\\
+C_y&=A_zB_x-A_xB_z\\
+C_z&=A_xB_y-A_yB_x\\
+\end{align*}
+\section{Dezplazamiento, tiempo y velocidad media}
+
+
 
 \end{document}
