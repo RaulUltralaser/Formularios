@@ -1,0 +1,76 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\setcounter{secnumdepth}{0}
+\setcounter{MaxMatrixCols}{20}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{hyperref}
+\graphicspath{ {./images/} }  
+
+\title{Formulario, Física}
+\author{Raúl Ultralaser}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Vectores}
+\begin{align*}
+\vec{A}&=A_x\hat{i}+A_y\hat{j}+A_z\hat{k}\\
+\vec{B}&=B_x\hat{i}+B_y\hat{j}+B_z\hat{k}\\
+\end{align*}
+Producto escalar (punto)
+\begin{equation*}
+    \Vec{A}\cdot \Vec{B}=ABcos\phi=|A||B|cos\phi
+\end{equation*}
+en términos de sus componentes
+\begin{equation*}
+    \Vec{A}\cdot \Vec{B}=A_xB_x+A_yB_y+A_zB_z
+\end{equation*}
+Producto cruz
+\begin{equation*}
+    \Vec{C}=\Vec{A}\times\Vec{B}=ABsen\phi
+\end{equation*}
+en términos de sus componentes
+\begin{align*}
+C_x&=A_yB_z-A_zB_y\\
+C_y&=A_zB_x-A_xB_z\\
+C_z&=A_xB_y-A_yB_x\\
+\end{align*}
+\section{Movimiento rectilíneo}
+
+Velocidad meda $x$, movimiento rectilíneo
+\begin{equation*}
+    v_{med-x}=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}
+\end{equation*}
+Componente $x$ de la velocidad instantánea.
+\begin{equation*}
+    v_x=\lim_{\Delta t\rightarrow 0}\frac{\Delta x}{\Delta t}=\frac{dx}{dt}
+\end{equation*}
+Aceleración media, movimiento rectilíneo,
+\begin{equation*}
+    a_{med-x}=\frac{v_{2x}-v_{1x}}{t_2-t_1}=\frac{\Delta v_x}{\Delta t}
+\end{equation*}
+aceleración instantánea, movimiento rectilíneo.
+\begin{equation*}
+    a_x=\lim_{\Delta t\rightarrow 0}\frac{\Delta v_x}{\Delta t}=\frac{dv_x}{dt}
+\end{equation*}
+Movimiento con aceleración constante (solo con aceleración constante)
+\begin{align*}
+    v_x&=v_{0x}+a_xt\\
+    x&=x_0+v_{0x}t+\frac{1}{2}a_xt^2\\
+    v_x^2&=v^2_{0x}+2a_x(x-x_0)\\
+    x-x_0&=\left( \frac{v_{0x}+v_x}{2} \right)t.
+\end{align*}
+Velocidad y posición por integración
+\begin{align*}
+    v_x&=v_{0x}+\int_0^ta_xdt\\
+    x&=x_0+\int_0^tv_xdt.
+\end{align*}
+\section{Movimiento en dos o en  tres  dimensiones}
+
+\end{document}

@@ -1,0 +1,34 @@
+The simplest algebraic structure to recognize is a semigroup, which is defined as a nonempty set $S$ with an associative binary operation.  
+
+\begin{defi}
+Let $(S,\cdot)$ be a semigroup. If there is an element $e$, in $S$ such that \begin{equation*}
+    ex=x=xe \hspace{1cm} for \hspace{.2cm} all \hspace{.2cm} x\in S,
+\end{equation*}
+then $e$ is called the identity of the semigroup $(S,\cdot)$.
+\end{defi}
+\begin{defi}
+    Let $(S,\cdot)$ be a semigroup with identity $e$. Let $a\in S$. If there exist an element $b$ in $S$ such that \begin{equation*}
+        ab=e=ba
+    \end{equation*}then b is called the inverse of $a$, and $a$ is said to be invertible
+\end{defi}
+\begin{defi}
+    A nonempty set $G$ with a binary operation $\cdot$ on $G$ is called a group if the following axioms hold:
+    \begin{align*}
+        (i)&\hspace{.3cm} a(bc)=(ab)c \hspace{.1cm}for\hspace{.1cm}all\hspace{.1cm}a,b,c\in G.\\
+        (ii)&\hspace{.3cm}There\hspace{.1cm}exist\hspace{.1cm}e\in G \hspace{.1cm}such\hspace{.1cm} that\hspace{.1cm} ea=a\hspace{.1cm}\\ &for\hspace{.1cm}all\hspace{.1cm}a\in G.\\
+        (iii)&\hspace{.3cm}For\hspace{.1cm}every\hspace{.1cm}a\in G\hspace{.1cm}\\
+        &there\hspace{.1cm}exist\hspace{.1cm}a'\in G\hspace{.1cm}such\hspace{.1cm}that\hspace{.1cm}a'a=e
+    \end{align*}
+\end{defi}
+
+\begin{teo}
+A semigroup $G$ is a group if and only if for all $a,b$ in $G$, each of the equations $ax=b$ and $ya=b$ has a solution.
+\end{teo}
+
+\begin{teo}
+    A finite semigroup $G$ is a group if and only if the cancelation laws hold for all elements in $G$; that is,
+    \begin{equation*}
+        ab=ac\Rightarrow b=c \hspace{.3cm} and \hspace{.3cm} ba=ca\Rightarrow b=c
+    \end{equation*}
+    for all $a,b,c\in G$
+\end{teo}

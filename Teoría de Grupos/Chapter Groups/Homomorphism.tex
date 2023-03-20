@@ -1,0 +1,28 @@
+\begin{defi}
+    Let $G,H$ be groups. A mapping\begin{equation*}
+        \phi:G\rightarrow H
+    \end{equation*}
+    is called a homomorphism if for all $x,y\in G$
+    \begin{equation*}
+        \phi(xy)=\phi(x)\phi(y)
+    \end{equation*}
+    Furthermore, if $\phi$ is bijective, then $\phi$ is called an isomorphism of $G$ onto $H$, and we write $G\simeq H$. If $\phi$ is just injective, that is, $1-1$, then we say that $\phi$ is an isomorphism (or monomorphism) of $G$ into $H$. if $\phi$ is surjective, that is, onto, then $\phi$ is called an epimorphism, A homomorphism of $G$ into itself is called an endomorphism of $G$ that is both $1-1$ and onto is called an automorphism of $G$.
+
+    If $\phi:G\rightarrow H$ is called an intro homomorphism, then $H$ is called a homomorphic image of $G$; also, $G$ is said to be homomorphic to $H$. If $\phi:G\rightarrow H$ is a $1-1$ homomorphism, then $G$ is said to be embeddable in $H$, and we write $G\circlearrowleft H$.
+\end{defi}
+\begin{teo}
+    Let $G$ and $H$ be groups with identities $e$ and $e'$, respectively, and let $\phi:G\rightarrow H$ be a homomorphism. Then
+    \begin{align*}
+        (i)&\hspace{.3cm} \phi(e)=e'\\
+        (ii)&\hspace{.3cm}\phi(x^{-1})=(\phi(x))^{-1}\hspace{.1cm}for\hspace{.1cm}each\hspace{.1cm}x\in G.
+    \end{align*}
+\end{teo}
+\begin{defi}
+    Let $G$ and $H$ be groups, and let $\phi:G\rightarrow H$ be a homomorphism. The kernel of $\phi$ is defined to be the set\begin{equation*}
+        Ker\phi=\{x\in G|\phi(x)=e'\}
+    \end{equation*}
+    where $e'$ is the identity in $H$
+\end{defi}
+\begin{teo}
+    A homomorphism $\phi:G\rightarrow H$ is injective if and only if $Ker\phi=\{e\}$
+\end{teo}
