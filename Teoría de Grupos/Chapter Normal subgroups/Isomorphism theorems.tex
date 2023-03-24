@@ -1,0 +1,43 @@
+\begin{teo}[\textbf{First isomorphism theorem}]
+    Let $phi:G\rightarrow G'$ be a homomorphism of groups. Then
+    \begin{equation*}
+        G/Ker\phi \simeq Im \phi
+    \end{equation*}
+    Hence, in particular, if $\phi$ is surjective, then 
+    \begin{equation*}
+        G/Ker \phi \simeq G'
+    \end{equation*}
+\end{teo}
+\begin{coro}
+Any homomorphism $\phi:G\rightarrow G'$ of groups can be factored as 
+\begin{equation*}
+    \phi=j\cdot\psi\cdot\eta
+\end{equation*}
+where $\eta:G\rightarrow G/Ker\phi$ is the natural homomorphism, $\psi:G/Ker\phi\rightarrow Im\phi$ is the isomorphism obtained in the theorem, and $j:Im\phi\rightarrow G'$ is the inclusion map.
+\begin{center}
+    \xymatrix{
+    G \ar[r]^{\phi} \ar[d]^{\eta}& G'  \\
+    G/Ker\phi \ar[r]^{\phi} & Im\phi \ar[u]^j}
+\end{center}
+\end{coro}
+\begin{teo}[\textbf{Second isomorphism theorem}]
+    Let $H$ and $N$ be subgroups of $G$, and $N\vartriangleleft G$. Then
+    \begin{equation*}
+        H/H\cap N \simeq HN/N
+    \end{equation*}
+\end{teo}
+The inclusion diagram shown below is helpful in visualizing the theorem. Because of this, the theorem is known as the "diamond isomorphism theorem".
+\begin{center}
+    \xymatrix{
+      & G \ar@{-}[d]&\\
+      & HN  \ar@{-}[ld] \ar@{-}[rd] &    \\
+       H \ar@{-}[rd]& & N\ar@{-}[ld] \\
+       &H\cap N&    }
+\end{center}
+\begin{teo}[\textbf{Third isomorphism theorem}]
+    Let $H$ and $K$ be normal subgroups of $G$ and $K\subset H$. Then
+    \begin{equation*}
+        (G/K)(H/K)\simeq G/H
+    \end{equation*}
+\end{teo}
+This theorem is also known as the "double quotient isomorphism theorem".
