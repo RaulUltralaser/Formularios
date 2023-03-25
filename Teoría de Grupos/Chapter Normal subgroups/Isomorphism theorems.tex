@@ -41,3 +41,39 @@ The inclusion diagram shown below is helpful in visualizing the theorem. Because
     \end{equation*}
 \end{teo}
 This theorem is also known as the "double quotient isomorphism theorem".
+\begin{teo}
+    Let $G_1$ and $G_2$ be groups, and $N_1\vartriangleleft G_1, N_2\vartriangleleft G_2$. Then $(G_1\times G_2)/(N_1\times N_2)\simeq (G_1/N_1)\times(G_/N_2)$.
+\end{teo}
+\begin{teo}[\textbf{correspondence theorem}]
+    Let $\phi:G\rightarrow G'$ be a homomorphism of a group $G$ onto a group $G'$. Then the following are true:
+    \begin{align*}
+    (i)&\hspace{.3cm}H<G\Rightarrow \phi(H)<G'.\\
+    (i)'&\hspace{.3cm}H'<G'\Rightarrow \phi^{-1}(H')<G.\\
+    (ii)&\hspace{.3cm}H\vartriangleleft G\Rightarrow \phi(H)\vartriangleleft G'\\
+    (ii)'&\hspace{.3cm}H'\vartriangleleft G'\Rightarrow \phi^{-1}(H')\vartriangleleft G\\
+    (iii)&\hspace{.3cm}H<G\hspace{.1cm}and\hspace{.1cm}H\supset Ker\phi \Rightarrow H=\phi^{-1}(\phi(H))\\
+    (iv)&\hspace{.3cm}The\hspace{.1cm}maping\hspace{.1cm}H\mapsto\phi(H)\hspace{.1cm}is\hspace{.1cm}a\hspace{.1cm}1-1\hspace{.1cm}correspondence\\
+    &\hspace{.1cm}between\hspace{.1cm}the\hspace{.1cm}family\hspace{.1cm}of\hspace{.1cm}subgroups\hspace{.1cm}of\hspace{.1cm}G';futhermore,\\
+    &\hspace{.1cm}normal\hspace{.1cm}subgroups\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm}correspond\hspace{.1cm}to\hspace{.1cm}normal\\
+    &\hspace{.1cm}subgroups\hspace{.1cm}of\hspace{.1cm}G'.
+    \end{align*}
+\end{teo}
+\begin{coro}
+    Let $N$ be a normal subgroup of $G$. Given any subgroup $H'$ of $G/N$, there is a unique subgroup $H$ of $G$ such that $H'=H/N$. Further, $H\vartriangleleft G$ if and only if $H/N\vartriangleleft G/N$.
+\end{coro}
+\begin{defi}
+ Let $G$ be a group. A normal subgroup $N$ of $G$ is called a maximal normal subgroup if
+ \begin{align*}
+     (i)&\hspace{.3cm}N\neq G\\
+     (ii)&\hspace{.3cm}H\vartriangleleft G\hspace{.1cm}and\hspace{.1cm}H\supset N\Rightarrow H=N\hspace{.1cm}or\hspace{.1cm}H=G.
+ \end{align*}
+\end{defi}
+\begin{defi}
+    A group of $G$ is said  to be simple if $G$ has no proper normal subgroups;that is, $G$ has no normal subgroups except $(e)$ and $G$.
+\end{defi}
+\begin{coro}
+    Let $N$ be a proper normal subgroup of $G$. Then $N$ is a maximal normal subgroup of $G$ if and only if $G/N$ is simple.
+\end{coro}
+\begin{coro}
+    Let $H$ and $K$ be a distinct maximal normal subgroups of $G$. Then $H\cap K$ is a maximal normal subgroup of $H$ and also of $K$.
+\end{coro}
