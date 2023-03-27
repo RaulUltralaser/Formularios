@@ -55,8 +55,7 @@ Let $G$ be a group. Then $G$ is isomorphic into the symmetric group $S_G$.
 \begin{teo}
     Let $G$ be a group. Then the following are true:
     \begin{align*}
-        (i)&\hspace{.3cm}The\hspace{.1cm}set\hspace{.1cm}of\hspace{.1cm}conjugate\hspace{.1cm}classes\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm}is\hspace{.1cm}a\hspace{.1cm}partition\\
-        &\hspace{.1cm}of\hspace{.1cm}G\\
+        (i)&\hspace{.3cm}The\hspace{.1cm}set\hspace{.1cm}of\hspace{.1cm}conjugate\hspace{.1cm}classes\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm}is\hspace{.1cm}a\hspace{.1cm}\\ &partition\hspace{.1cm}of\hspace{.1cm}G\\
         (ii)&\hspace{.3cm}|C(a)|=[G:N(a)]\\
         (iii)&\hspace{.3cm}If\hspace{.1cm}G\hspace{.1cm}is\hspace{.1cm}finite,\hspace{.1cm}|G|=\sum[G:N(a)],\hspace{.1cm}a\hspace{.1cm} running \\
         &over\hspace{.1cm} exactly\hspace{.1cm} one\hspace{.1cm} element\hspace{.1cm} from\hspace{.1cm} each\hspace{.1cm} conjugate\hspace{.1cm} \\
@@ -66,3 +65,29 @@ Let $G$ be a group. Then $G$ is isomorphic into the symmetric group $S_G$.
 \begin{defi}
     Let $S$ and $T$ be two subsets of a group $G$. Then $T$ is said to be conjugate to $S$ is there exist $x\in G$ such that $T=xSx^{-1}$.
 \end{defi}
+\begin{teo}
+    Let $G$ be a group. Then for any subset $S$ of $G$,
+    \begin{equation*}
+        |C(S)|=[G:N(S)]\hspace{.5cm}[N(S)=\{x\in G|x^{-1}Sx=S\}]
+    \end{equation*}
+\end{teo}
+\begin{teo}
+    Let $G$ be a finite group order of $p^n$, where $p$ is prime and $n>0$. Then.
+    \begin{align*}
+        (i)&\hspace{.3cm}G\hspace{.1cm}has\hspace{.1cm}a\hspace{.1cm}nontrivial\hspace{.1cm}center\hspace{.1cm}Z.\\
+        (ii)&\hspace{.3cm}Z\cap N\hspace{.1cm}is\hspace{.1cm}nontrivial\hspace{.1cm}for\hspace{.1cm}any\hspace{.1cm}nontrivial\hspace{.1cm}normal\\
+        &\hspace{.1cm}subgroup\hspace{.1cm}N\hspace{.1cm}of\hspace{.1cm}G.\\
+        (iii)&\hspace{.3cm}If\hspace{.1cm}H\hspace{.1cm}is\hspace{.1cm}a\hspace{.1cm}proper\hspace{.1cm}subgroup\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm},then\hspace{.1cm}H\hspace{.1cm}is\\
+        &\hspace{.1cm}properly\hspace{.1cm}contained\hspace{.1cm}in\hspace{.1cm}N(H);\hspace{.1cm}hence,\hspace{.1cm}if\hspace{.1cm}H\hspace{.1cm}is\\
+        &\hspace{.1cm}a\hspace{.1cm}sobgroup\hspace{.1cm}of\hspace{.1cm}order\hspace{.1cm}p^{n-1},\hspace{.1cm}then\hspace{.1cm}H\vartriangleleft G.
+    \end{align*}
+\end{teo}
+\begin{coro}
+    Every group of order $p^2$ ($p$ is prime) is abelian.
+\end{coro}
+\begin{teo}[\textbf{Burnside}]
+    Let $G$ be a finite group acting on a finite set $X$. Then the number $k$ of orbits in $X$ under $G$ is
+    \begin{equation*}
+        k=\frac{1}{|G|}\sum_{g\in G}|X_g|.
+    \end{equation*}
+\end{teo}
