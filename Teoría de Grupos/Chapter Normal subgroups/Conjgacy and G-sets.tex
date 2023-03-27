@@ -1,0 +1,68 @@
+\begin{defi}
+    Let $G$ be a group and $X$ a set. Then $G$ is said to act on $X$ if there is a mapping $\phi:G\times X\mapsto X$, with $\phi(a,x)$ written $a*x$, such that for all $a,b\in G, x\in X$,
+    \begin{align*}
+        (i)&\hspace{.3cm}a*(b*x)=(ab)*x\\
+        (ii)&\hspace{.3cm}e*x=x\\
+    \end{align*}
+    The mapping $\phi$ is called the action of $G$ on $X$, and $X$ is said to be a $G-set$.
+\end{defi}
+\begin{teo}
+    Let $G$ be a group and let $X$ be a set
+    \begin{align*}
+        (i)&\hspace{.3cm}If\hspace{.1cm}X\hspace{.1cm}is\hspace{.1cm}a\hspace{.1cm}G-set,then\hspace{.1cm}the\hspace{.1cm}action\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm}on\hspace{.1cm}X\\
+        &\hspace{.1cm}induces\hspace{.1cm}a\hspace{.1cm}Homomorphism\hspace{.1cm}\phi:G\mapsto S_x.\\
+        (ii)&\hspace{.3cm}Any\hspace{.1cm}homomorphism\hspace{.1cm}\phi:G\mapsto S_x\hspace{.1cm}induces\hspace{.1cm}and\\
+        &\hspace{.1cm}action\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm}onto\hspace{.1cm}X.
+    \end{align*}
+\end{teo}
+\begin{teo}[\textbf{Cayley's theorem}]
+Let $G$ be a group. Then $G$ is isomorphic into the symmetric group $S_G$.
+\end{teo}
+\begin{teo}
+    Let $G$ be a group and $H<G$ of index $n$. Then there is a homomorphism $\phi:G\mapsto S_n$ such that $Ker\phi=\cap_{x\in G}xHx^{-1}$
+\end{teo}
+\begin{coro}
+    Let $G$ be a group with a normal subgroup $H$ of index $n$. Then $G/H$ is isomorphic into $S_n$.
+\end{coro}
+\begin{coro}
+    Let $G$ be a simple group with a subgroup $\neq G$ of finite index $n$. Then $G$ is isomorphic into $S_n$
+\end{coro}
+\begin{defi}
+    Let $G$ be a group acting on a set $X$, and let $x\in X$. Then the set 
+    \begin{equation*}
+        G_x=\{g\in G|gx=x\}
+    \end{equation*}
+    which can be easily shown to be a subgroup, is called the stabilizer (or isotropy) group of $x$ in $G$.
+\end{defi}
+\begin{defi}
+    Let $G$ be a group acting on a set $X$, and let $x\in X$. Then the set 
+    \begin{equation*}
+        Gx=\{ax|a\in G\}
+    \end{equation*}
+    is called the orbit of $x$ in $G$.
+\end{defi}
+\begin{teo}
+    Let $G$ be a group acting on a set $X$. Then the set of all orbits in $X$ under $G$ is a partition of $X$. For any $x\in X$ there is a bijection $Gx\mapsto G/G_x$ and, hence,
+    \begin{equation*}
+        |Gx|=[G:G_X].
+    \end{equation*}
+    Therefore, if $X$ is a finite set,
+    \begin{equation*}
+        |X|=\sum_{x\in C}[G:G_x],
+    \end{equation*}
+    where $C$ is a subset of $X$ containing exactly one element from each orbit.
+\end{teo}
+\begin{teo}
+    Let $G$ be a group. Then the following are true:
+    \begin{align*}
+        (i)&\hspace{.3cm}The\hspace{.1cm}set\hspace{.1cm}of\hspace{.1cm}conjugate\hspace{.1cm}classes\hspace{.1cm}of\hspace{.1cm}G\hspace{.1cm}is\hspace{.1cm}a\hspace{.1cm}partition\\
+        &\hspace{.1cm}of\hspace{.1cm}G\\
+        (ii)&\hspace{.3cm}|C(a)|=[G:N(a)]\\
+        (iii)&\hspace{.3cm}If\hspace{.1cm}G\hspace{.1cm}is\hspace{.1cm}finite,\hspace{.1cm}|G|=\sum[G:N(a)],\hspace{.1cm}a\hspace{.1cm} running \\
+        &over\hspace{.1cm} exactly\hspace{.1cm} one\hspace{.1cm} element\hspace{.1cm} from\hspace{.1cm} each\hspace{.1cm} conjugate\hspace{.1cm} \\
+        &class.
+    \end{align*}
+\end{teo}
+\begin{defi}
+    Let $S$ and $T$ be two subsets of a group $G$. Then $T$ is said to be conjugate to $S$ is there exist $x\in G$ such that $T=xSx^{-1}$.
+\end{defi}
