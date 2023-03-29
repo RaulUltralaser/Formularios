@@ -1,0 +1,24 @@
+\begin{defi}
+    A sequence $(G_0,G_1,...,G_r)$ of subgroups $G$ is called a normal series (or subnormal series) of $G$ if
+    \begin{equation*}
+        \{e\}=G_0\vartriangleleft G_1\vartriangleleft G_2\vartriangleleft\cdots \vartriangleleft G_{r-1}\vartriangleleft G_r=G.
+    \end{equation*}
+    The factors of a normal series are the quotient groups $G_i/G_{i-1}, i\leq i\leq r$
+\end{defi}
+\begin{defi}
+    A composition series of a group $G$ is a normal series $(G_0,...,G_r)$ without repetition whose factors $G_i/G_{i-1}$ are all simple groups. These factors $G_i/G_{i-1}$ are called composition factors of $G$.
+\end{defi}
+\begin{lema}
+    Every finite group has a composition series.
+\end{lema}
+\begin{defi}
+    Two normal series $S=(G_0,G_1,...,G_r)$ and $S'=(G'_0,G'_1,...,G'_r)$ of $G$ are said to be equivalent, written $S\sim S'$, if the factors of one series are isomorphic to the factors of the other after some permutation; that is,
+    \begin{equation*}
+        G'_i/G'_{i-1}\simeq G_{\sigma(i)}/G_{\sigma(i)-1}\hspace{.3cm}i=1,...,r,
+    \end{equation*}
+    for some $\sigma\in S_r$.
+\end{defi}
+Evidently, $\sim$ is and equivalent relation.
+\begin{teo}[\textbf{Jordan-Holder}]
+    Any two composition series of a finite group are equivalent. 
+\end{teo}
